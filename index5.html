@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>#BlackLivesMatter_Donate</title>
+
+<style type="text/css">
+	
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #030303;
+	font-family: "微软雅黑";
+	
+}
+	
+a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+}
+		
+main{
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.btn{
+	position: relative;
+	display: inline-block;
+	margin-top: 50px;
+	padding:10px 30px;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	z-index: 1;
+	overflow: hidden;
+	transition:1s all ease;
+	border:2px solid #ffff00;
+}
+	
+.btn:hover{
+	color: #000;	
+}
+	
+.btn::before{
+	background: #ffff00;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) rotate(45deg);
+	z-index: -1;
+	transition: all 0.6s ease;
+	width: 0;
+	height: 380%;
+}
+	
+.btn:hover::before{
+	width: 100%;
+}
+	
+nav{
+	position: fixed;
+	display: flex;
+	padding: 2em 4em;
+	z-index: 5;
+}
+
+nav a{
+	color: #fff;	
+}
+
+nav .menu{
+	position: fixed;
+	display: flex;
+	right: 3em;
+}
+
+nav .menu li{
+	margin-left: 1.5em;
+	list-style: none;
+	z-index: 15;
+	display: inline-block;
+	list-style: none;
+	margin: 0 20px;
+	cursor: pointer;
+}
+
+	
+nav .menu li::after{
+	content: "";
+	width: 0;
+	height: 3px;
+	background-color: #ffff00;
+	display: block;
+	margin-top: 5px;
+	transition: 0.5s;
+}
+	
+nav .menu li:hover::after{
+	width:100%;
+}
+	
+#active a{
+	color: #ffff00;
+	font-weight: bold;
+}
+	
+
+.container{
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(imgs/img05.jpg);
+	width: 100vw;
+	height: 100vh;
+	align-items: left;
+	padding: 3em;
+}
+
+.container .content{
+	margin: 200px 100px;
+	color: #fff;
+}
+	
+.container .content p{
+	width: 50%;	
+}
+
+
+#title{
+	font-size: 72px;	
+}
+
+form input{
+	width: 200px;
+	height:30px;
+	padding-bottom: 5px;
+	background-color:transparent;
+	border: none;
+	border-bottom: 5px solid #ffff00;
+	font-family: "微软雅黑";
+}
+	
+input[type=text]{
+	color: #ffffff;
+	font-size: 20px;
+}
+	
+.value{
+	position: relative;
+	display: block;
+	text-align: left;
+	font-size: 6em;
+	color: #ffff00;
+	font-weight: bold;
+}
+	
+.slider{
+	width: 300px;
+}
+	
+.slider input{
+	width: 100%;
+	height: 5px;
+	-webkit-appearance:none;
+	outline:none;
+	background: #fff;
+}
+	
+.slider input::-webkit-slider-thumb{
+	-webkit-appearance:none;
+	width: 20px;
+	height: 20px;
+	background: #ffff00;
+	cursor: pointer;
+}
+
+	
+footer{
+	position: absolute;
+	width: 100%;
+	bottom: 15px;
+	color:#fff;
+	text-align: center;	
+}
+
+
+</style>
+</head>
+
+<body>
+	<main>
+		<nav>
+			<ul class="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index2.html">About</a></li>
+				<li><a href="index3.html">News</a></li>
+				<li><a href="index4.html">History</a></li>
+				<li id="active"><a href="index5.html">Donate</a></li>
+			</ul>
+		</nav>
+		
+		<div class="container">
+			<div class="content">
+				<h1 id="title">支持我們！</h1>
+				<div class="form">
+					<form>
+						<input type="text" class="name" placeholder="您的名字">
+						<input type="text" class="e-mail" placeholder="電子郵件">
+						<input type="text" class="number" placeholder="聯絡號碼">
+						<input type="text" class="Notes" placeholder="備注">
+					</form>
+					<div class="slider">
+						<h2>捐款金額</h2>
+						<div class="value">0</div>
+						<input type="range" class="sliderinput" min="0" max="10000" value="0">
+					</div>
+			
+					<div class="btn"><a href="">確認捐款</a></div>
+				</div>
+			</div>
+		</div>
+		<footer>Copyright©blacklivesmatter.All Right Reserved</footer>
+	</main>
+	
+	<script>
+		const slider = document.querySelector(".sliderinput");
+		const value = document.querySelector(".value");
+		value.textContent = slider.value;
+		slider.oninput = function(){
+			value.textContent = "$" + this.value;
+		}
+	
+	
+	</script>
+</body>
+</html>

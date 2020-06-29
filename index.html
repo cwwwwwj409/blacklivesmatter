@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>#BlackLivesMatter_Home</title>
+<style type="text/css">
+	
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #030303;
+	color: #ffffff;
+	font-family: "微软雅黑";
+}
+		
+a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff;;
+}
+
+h1{
+	font-size: 140px;
+	margin: 0;
+	text-transform: capitalize;
+	line-height: 150px
+}
+
+	
+h2{
+	margin: 0;
+	font-size: 50px;
+	color: #ffff00;
+}
+	
+h3{
+	font-size: 30px;
+	margin: 0;
+	border-top: 10px solid #ffff00;
+	padding-top: 30px;
+	width: 30%;
+}
+
+main{
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+	
+nav{
+	position: fixed;
+	display: flex;
+	padding: 2em 4em;
+}
+
+nav .menu{
+	position: fixed;
+	display: flex;
+	right: 3em;
+}
+
+nav .menu li{
+	margin-left: 1.5em;
+	list-style: none;
+	z-index: 15;
+	display: inline-block;
+	list-style: none;
+	margin: 0 20px;
+	color:#255784;
+	cursor: pointer;
+}
+	
+	
+nav .menu li::after{
+	content: "";
+	width: 0;
+	height: 3px;
+	background-color: #ffff00;
+	display: block;
+	margin-top: 5px;
+	transition: 0.5s;
+}
+	
+nav .menu li:hover::after{
+	width:100%;
+}
+	
+#active a{
+	color: #ffff00;
+	font-weight: bold;
+}
+	
+.container{
+	margin: 0 auto;
+	width: 100vw;
+}
+
+.container .home{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.8em;
+}
+	
+img{
+	width: 100%;
+}
+
+.image{
+	width:100% ;
+	margin-right: 30px;
+	overflow: hidden;
+}
+
+.content{
+	margin-right: 200px;
+	text-align: left;
+}
+	
+.btn{
+	margin-top: 50px;
+	position: relative;
+	display: inline-block;
+	padding:10px 30px;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	overflow: hidden;
+	transition:1s all ease;
+	border:2px solid #ffff00;
+}
+	
+.btn:hover{
+	color: #000;
+}
+	
+.btn::before{
+	background: #ffff00;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) rotate(45deg);
+	z-index: -1;
+	transition: all 0.6s ease;
+	width: 0;
+	height: 380%;
+}
+	
+.btn:hover::before{
+	width: 100%;
+	color: #000;
+}
+
+.text{
+	display: flex;
+	font-size: 5em;
+	font-weight: 900;
+	margin: 0;
+	line-height: 1;
+	color: #ffff00;
+}
+
+footer{
+	position: absolute;
+	width: 100%;
+	bottom: 15px;
+	color:#fff;
+	text-align: center;
+		
+}
+
+
+</style>
+</head>
+
+<body>
+	<main>
+		<nav>
+			<ul class="menu">
+				<li id="active"><a href="#">Home</a></li>
+				<li><a href="index2.html">About</a></li>
+				<li><a href="index3.html">News</a></li>
+				<li><a href="index4.html">History</a></li>
+				<li><a href="index5.html">Donate</a></li>
+			</ul>
+		</nav>
+		
+		<div class="container">
+			<section id="home" class="home">
+				<div class="image">
+					<img src="imgs/gif01.gif" alt="">
+				</div>
+				
+				<div class="content">
+					<h3>我無法呼吸.</h3>
+					<h1>i can't breathe.</h1>
+					<div class="text">
+						<h2>#Black Lives Matter</h2>
+					</div>
+					<a href="index2.html" class="btn">Read More</a>
+				</div>
+				
+			</section>
+			
+			
+			
+			<footer>Copyright©blacklivesmatter.All Right Reserved</footer>
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+		
+		<script>
+			
+		$(function(){
+			$(".text").typed({
+			strings:["#BlackLivesMatter","#Stop Racist","#RIP George Floyd"],
+			typeSpeed:50,
+			backSpeed:20,
+			backDelay:2000,
+			showCursor:false,
+			loop:true
+			});
+		});
+		
+		
+		
+		
+		</script>
+	</main>
+	
+</body>
+</html>

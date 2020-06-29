@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>#BlackLivesMatter_About</title>
+<style type="text/css">
+	
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #030303;
+	color: #ffffff;
+	font-family: "微软雅黑";
+}
+	
+.video-background{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	z-index: -1;
+}
+		
+a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff;;
+}
+
+h1{
+	font-size: 140px;
+	margin: 0;
+	text-transform: capitalize;
+	line-height: 150px
+}
+	
+h2{
+	font-size: 80px;
+}
+
+p{
+	margin-top: 50px;	
+	font-weight: bold;
+	letter-spacing: 3px;
+	width: 100%;
+}
+
+main{
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+	
+nav{
+	position: fixed;
+	display: flex;
+	padding: 2em 4em;
+}
+
+nav .menu{
+	position: fixed;
+	display: flex;
+	right: 3em;
+}
+
+nav .menu li{
+	margin-left: 1.5em;
+	list-style: none;
+	z-index: 15;
+	display: inline-block;
+	list-style: none;
+	margin: 0 20px;
+	color:#255784;
+	cursor: pointer;
+}
+	
+	
+nav .menu li::after{
+	content: "";
+	width: 0;
+	height: 3px;
+	background-color: #ffff00;
+	display: block;
+	margin-top: 5px;
+	transition: 0.5s;
+}
+	
+nav .menu li:hover::after{
+	width:100%;
+}
+	
+#active a{
+	color: #ffff00;
+	font-weight: bold;
+}
+	
+.container{
+	margin: 0 auto;
+	width: 100vw;
+}
+
+.container .home{
+	width: 100vw;
+	height: 100vh;
+	margin-left: 5em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.8em;
+}
+	
+img{
+	width: 100%;
+}
+
+.image{
+	width:100% ;
+	margin-right: 30px;
+	overflow: hidden;
+}
+
+.content{
+	margin-right: 200px;
+	text-align: left;
+}
+	
+.btn{
+	position: relative;
+	display: inline-block;
+	padding:10px 30px;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	overflow: hidden;
+	transition:1s all ease;
+	border:2px solid #ffff00;
+}
+	
+.btn:hover{
+	color: #000;	
+}
+	
+.btn::before{
+	background: #ffff00;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) rotate(45deg);
+	z-index: -1;
+	transition: all 0.6s ease;
+	width: 0;
+	height: 380%;
+}
+	
+.btn:hover::before{
+	width: 100%;
+}
+	
+			
+footer{
+	position: absolute;
+	width: 100%;
+	bottom: 15px;
+	color:#fff;
+	text-align: center;
+		
+}
+
+
+</style>
+</head>
+
+<body>
+	<main>
+		<section>
+			<video autoplay loop class="video-background" muted plays-inline>
+			<source src="imgs/video01.mp4" type="video/mp4"> 
+			</video>
+		</section>
+		<nav>
+			<ul class="menu">
+				<li><a href="index.html">Home</a></li>
+				<li id="active"><a href="index2.html">About</a></li>
+				<li><a href="index3.html">News</a></li>
+				<li><a href="index4.html">History</a></li>
+				<li><a href="index5.html">Donate</a></li>
+			</ul>
+		</nav>
+		
+		<div class="container">
+			<section id="home" class="home">
+				<div class="content">
+					<h1>喬治·佛洛伊德之死</h1>
+					<h2>George Floyd's Death</h2>
+					<a href="https://www.youtube.com/watch?v=vksEJR9EPQ8&t=451s&bpctr=1592937050" target="new" class="btn">Play Video</a>
+					<p>終年46歲的非裔美國人喬治·佛洛伊德在家鄉休斯頓下葬。他上月在被捕時窒息身亡，記錄拘捕過程的視頻震撼全球，引發大規模反種族歧視示威。佛洛伊德的葬禮9日在德州休斯頓一個教堂舉行，他的棺木稍後將運至他母親下葬的墓園，長眠母親之畔。當日的家族私人追悼會在可容納2000人的教堂舉行，鑒於新冠疫情，佛洛伊德的家人邀請了500名賓客，包括政治家、民權運動家和名人，座次安排將符合社交距離。
+
+					休斯頓8日曾舉行公眾瞻仰儀式，數千民眾向佛洛伊德的棺木致意。此前，在他去世的明尼阿波利斯市與出生地北卡羅來納州都舉行了追思會。民主黨總統候選人拜登形容，佛洛伊德之死是「美國歷史的重要拐點之一」。</p>
+				</div>
+			</section>
+			
+			
+			
+			<footer>Copyright©blacklivesmatter.All Right Reserved</footer>
+		</div>
+	</main>
+	
+</body>
+</html>

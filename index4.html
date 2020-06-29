@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>#BlackLivesMatter_History</title>
+
+<style type="text/css">
+	
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #030303;
+	font-family: "微软雅黑";
+}
+	
+a{
+	text-decoration: none;
+	text-transform: uppercase;
+}
+	
+main{
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+	
+nav{
+	position: fixed;
+	display: flex;
+	padding: 2em 4em;
+	z-index: 5;
+}
+
+h3{
+	color: #ffff00;	
+}
+nav a{
+	color: #fff;	
+}
+
+nav .menu{
+	position: fixed;
+	display: flex;
+	right: 3em;
+}
+
+nav .menu li{
+	margin-left: 1.5em;
+	list-style: none;
+	z-index: 15;
+	display: inline-block;
+	list-style: none;
+	margin: 0 20px;
+	color:#255784;
+	cursor: pointer;
+}
+
+	
+nav .menu li::after{
+	content: "";
+	width: 0;
+	height: 3px;
+	background-color: #ffff00;
+	display: block;
+	margin-top: 5px;
+	transition: 0.5s;
+}
+	
+nav .menu li:hover::after{
+	width:100%;
+}
+	
+#active a{
+	color: #ffff00;
+	font-weight: bold;
+}
+	
+
+.btn{
+	position: relative;
+	display: inline-block;
+	margin-top: 50px;
+	padding:10px 30px;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	overflow: hidden;
+	transition:1s all ease;
+	border:2px solid #ffff00;
+}
+	
+.btn::before{
+	background: #ffff00;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) rotate(45deg);
+	z-index: -1;
+	transition: all 0.6s ease;
+	width: 0;
+	height: 380%;
+}
+	
+.btn:hover::before{
+	width: 100%;
+}
+	
+.timeline{
+	display: flex;
+	background-color: #030303;
+}
+	
+.timeline:hover .tl-item{
+	width: 23.3333%;
+}
+
+.tl-item{
+	transform: translate3d(0,0,0);
+	position: relative;
+	width: 25%;
+	height: 100vh;
+	min-height: 600px;
+	color: #ffffff;
+	overflow: hidden;
+	transition: width 0.5s ease;
+}
+	
+.tl-item:hover{
+	width: 30% !important;	
+}
+	
+
+.tl-item:hover .tl-content{
+	transform: translateY(0);
+	transition: all 0.75s ease;
+}
+	
+	
+.tl-item:hover .tl-bg{
+	opacity:30%;
+}
+	
+.tl-bg{
+	transform: translate3d(0,0,0);
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-position: center;
+	transition: opacity 0.5s ease;
+	opacity:70%;
+	filter: grayscale(100%);
+}
+
+.tl-content{
+	transform: translate3d(0,0,0) translateY(25px);
+	position: relative;
+	text-align: left;
+	margin: 50px;
+	top: 55%;
+}
+
+.t1-content h1{
+	text-transform: uppercase;
+	font-size: 100px;
+	font-weight: normal;
+}
+	
+.tl-content p{
+	letter-spacing: 3px;
+	text-align:justify;
+	font-weight: bold;
+}
+
+.tl-year{
+	position: absolute;
+	display: block;
+	width: 100%;
+	top: 50%;
+	transform:translateY(-50%);
+	border-top: 5px solid #ffff00;
+	padding-left: 50px;
+	
+}
+
+footer{
+	position: absolute;
+	width: 100%;
+	bottom: 15px;
+	color:#fff;
+	text-align: center;	
+}
+
+
+</style>
+</head>
+
+<body>
+	<main>
+		<nav>
+			<ul class="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index2.html">About</a></li>
+				<li><a href="index3.html">News</a></li>
+				<li id="active"><a href="#">History</a></li>
+				<li><a href="index5.html">Donate</a></li>
+			</ul>
+		</nav>
+		
+		<section class="timeline">
+			<div class="tl-item">
+				<div class="tl-bg" style="background-image:url(imgs/historyimg01.jpg)"></div>
+				<div class="tl-year">
+				<h3>1776年某年某日</h3>
+				</div>
+				<div class="tl-content">
+					<h1>美國奴隸制度</h1>
+					<p>奴隸制起源於不列顛對北美殖民早期，在1776年《獨立宣言》中被十三個殖民地承認。當美國建國時，雖然自由的有色人種已經存在，但是大多數奴隸是非洲後裔，種族在體制和遺產上起了決定因素。在獨立戰爭後，廢奴主義法律和情緒逐漸在北方各州中散布，1800年起棉花工業的快速發展使得南方各州與奴隸制強烈地聯繫在一起，並且試圖將奴隸制擴散到新開闢的西方領域。</p>
+				</div>
+			</div>
+			
+			<div class="tl-item">
+				<div class="tl-bg" style="background-image:url(imgs/historyimg02.jpg)"></div>
+				<div class="tl-year">
+				<h3>1863年1月1日</h3>
+				</div>
+				<div class="tl-content">
+					<h1>解放奴隸宣言</h1>
+					<p>美國總統亞伯拉罕·林肯於1863年1月1日公布了《解放奴隸宣言》，其主張所有美利堅邦聯叛亂下的領土之黑奴應享有自由，然而未脫離聯邦的邊境州，以及聯邦掌控下的諸州依然可以使用奴隸。此宣言僅立即解放少部分奴隸，但實質上強化聯邦軍掌控邦聯的領土後這些黑奴自由的權威性，並為最終廢除全美奴隸制度預先鋪路。</p>
+				</div>
+			</div>
+			
+			<div class="tl-item">
+				<div class="tl-bg" style="background-image:url(imgs/historyimg03.jpg)"></div>
+				<div class="tl-year">
+				<h3>1968年4月4日</h3>
+				</div>
+				<div class="tl-content">
+					<h1>馬丁·路德·金為平權獻生</h1>
+					<p>自1986年起，美國每年1月第3個星期一被定為「馬丁路德金恩紀念日」，以此紀念於1968年遭暗殺的非裔人權運動領袖馬丁路德金恩博士。曾獲得諾貝爾和平獎殊榮的他，以《我有一個夢想》的演講聞名全球，更奠定今日他在美國各族群爭取平等權利時的象徵地位。就連有明顯種族傾向的川普，都在說錯話之後，於紀念日當天會面化解分歧問題，以防造成更大的反應。</p>
+				</div>
+			</div>
+			
+			<div class="tl-item">
+				<div class="tl-bg" style="background-image:url(imgs/historyimg04.jpg)"></div>
+				<div class="tl-year">
+				<h3>2008年11月4日</h3>
+				</div>
+				<div class="tl-content">
+					<h1>歐巴馬當選美國總統</h1>
+					<p>這是當代全球事務的重大事件。對美國而言，他的勝利除了一舉突破種族主義的藩籬，重燃美國人民對於「美國夢」的希望外，並結束了共和黨過去四分之一世紀的長期執政；對於以白人為主的西方先進國家來說，歐巴馬成為第一位具有非洲血統的西方國家領袖；對全球而言，他的勝選代表未來的世界局勢</p>
+				</div>
+			</div>
+		
+		
+		
+		</section>
+		
+		
+		<footer>Copyright©blacklivesmatter.All Right Reserved</footer>
+	</main>
+</body>
+</html>
