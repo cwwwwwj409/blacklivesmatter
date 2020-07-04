@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>#BlackLivesMatter_News</title>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<style type="text/css">
+	
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #030303;
+	font-family: "微软雅黑";
+}
+	
+a{
+	text-decoration: none;
+	text-transform: uppercase;
+}
+	
+main{
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+	
+nav{
+	position: fixed;
+	display: flex;
+	padding: 2em 4em;
+}
+
+nav a{
+	color: #fff;	
+}
+
+nav .menu{
+	position: fixed;
+	display: flex;
+	right: 3em;
+}
+
+nav .menu li{
+	margin-left: 1.5em;
+	list-style: none;
+	z-index: 15;
+	display: inline-block;
+	list-style: none;
+	margin: 0 20px;
+	color:#255784;
+	cursor: pointer;
+}
+	
+	
+nav .menu li::after{
+	content: "";
+	width: 0;
+	height: 3px;
+	background-color: #ffff00;
+	display: block;
+	margin-top: 5px;
+	transition: 0.5s;
+}
+	
+nav .menu li:hover::after{
+	width:100%;
+}
+	
+#active a{
+	color: #ffff00;
+	font-weight: bold;
+}
+	
+.swiper-container {
+	position: absolute;
+	margin-top: 150px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+   	background-position: center;
+   	background-size: cover;
+    width: 800px;
+    height: 500px;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.content{
+	color: #ffffff;
+	margin:0 50px;
+	position: absolute;
+	bottom: 100px;
+}
+	
+.content p{
+	margin-top: 10px;
+	line-height: 2;
+}
+
+.btn{
+	position: relative;
+	display: inline-block;
+	margin-top: 50px;
+	padding:10px 30px;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	overflow: hidden;
+	transition:1s all ease;
+	border:2px solid #ffff00;
+}
+
+.btn:hover{
+	color: #000;	
+}
+	
+.btn::before{
+	background: #ffff00;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) rotate(45deg);
+	z-index: -1;
+	transition: all 0.6s ease;
+	width: 0;
+	height: 380%;
+}
+	
+.btn:hover::before{
+	width: 100%;
+}
+
+	
+footer{
+	position: absolute;
+	width: 100%;
+	bottom: 15px;
+	color:#fff;
+	text-align: center;	
+}
+
+
+</style>
+</head>
+
+<body>
+	<main>
+		<nav>
+			<ul class="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index2.html">About</a></li>
+				<li id="active"><a href="#">News</a></li>
+				<li><a href="index4.html">History</a></li>
+				<li><a href="index5.html">Donate</a></li>
+			</ul>
+		</nav>
+		
+		<div class="swiper-container">
+    		<div class="swiper-wrapper">
+				<div class="swiper-slide" style="background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(imgs/img01.jpg)">
+					<div class="content">
+					<h2>美國騷亂的導火索<br>佛洛依德先生被折騰死前三十分鐘</h2>
+					<p>根據BBC的報道，5月25日，美國明尼蘇達州黑人男子喬治·佛洛依德被警員制服期間死亡。事件再次挑起民衆長期以來對非裔美國人死於警方手下的憤怒，引發大規模抗議示威。</p>
+					<a href="" class="btn">Learn More</a>
+					</div>
+				</div>
+				
+				<div class="swiper-slide" style="background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(imgs/img02.jpg)">
+					<div class="content">
+					<h2>佛洛依德之死<br>揭開美國積怨已久的種族歧視問題</h2>
+					<p>佛羅里達當地警察選擇以和平的方式面對示威者，他們在警局外單膝跪地，和群眾們一起為弗洛伊德的死禱告。這股遍地開花的野火揭開美國積怨已久的種族歧視問題。</p>
+					<a href="" class="btn">Learn More</a>
+					</div>
+				</div>
+				
+				<div class="swiper-slide" style="background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(imgs/img03.jpg)">
+					<div class="content">
+					<h2>佛洛依德之死<br>喬丹聲明「我們受夠了」</h2>
+					<p>美國非裔男子之死，讓「籃球大帝」麥可喬丹也發表聲明，譴責種族歧視和暴力，與此同時，各種職業運動明星也以各自的方式，同聲譴責。</p>
+					<a href="" class="btn">Learn More</a>
+					</div>
+				</div>
+				
+				<div class="swiper-slide" style="background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(imgs/img04.jpg)">
+					<div class="content">
+					<h2>反骨男孩「黑人抬棺」挨轟種族歧視！<br>4點聲明：反應迦納民眾抬棺舞的趣味</h2>
+					<p>擁有百萬粉絲的網紅Wacky Boys反骨男孩，15日上傳新影片，把臉塗黑模仿「黑人抬棺」，引起已歸化台灣的美裔籃球員戴維斯不滿，遭轟種族歧視。</p>
+					<a href="" class="btn">Learn More</a>
+					</div>
+				</div>
+				
+				<div class="swiper-slide" style="background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(imgs/img05.jpg)">
+					<div class="content">
+					<h2>美19歲少年中彈喪命！<br>「佛洛伊德之死」示威現場爆槍擊</h2>
+					<p>美國明尼蘇達州非裔男子佛洛伊德之死點燃全美怒火。底特律29日也有不少民眾上街抗議，最新消息指出，一名休旅車駕駛突向抗議人群開槍。一名19歲男子中彈，緊急送醫後喪命。</p>
+					<a href="" class="btn">Learn More</a>
+					</div>
+				</div>
+   			</div>
+  		</div>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+			  effect: 'coverflow',
+			  grabCursor: true,
+			  centeredSlides: true,
+				autoplay: {
+				delay:2500,
+				disableOnInteraction: false,
+				},
+			  slidesPerView: 'auto',
+			  coverflowEffect: {
+				rotate: 20,
+				stretch: 0,
+				depth: 20,
+				modifier: 1,
+				slideShadows: true,
+			  },
+				loop:true,
+			});
+  		</script>
+		
+		<footer>Copyright©blacklivesmatter.All Right Reserved</footer>
+	</main>
+</body>
+</html>
